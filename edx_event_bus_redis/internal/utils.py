@@ -30,7 +30,7 @@ def _sourcelib_tuple_to_str(sourcelib: Tuple):
 
 
 def _sourcelib_str_to_tuple(sourcelib_as_str: str):
-    return tuple(map(int, sourcelib_as_str.split(".")))
+    return tuple(sourcelib_as_str.split("."))
 
 
 def encode(value: str) -> bytes:
